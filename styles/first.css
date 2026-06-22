@@ -1,0 +1,40 @@
+/* 선택자 {속성:값; 속성:값;} */
+h1 {color:red; background-color:yellow;}
+p {color:blue; background-color:#eee;}
+h2 {color:pink; background-color:silver;}
+dl {background-color:beige; color:red;}
+dt {background-color:lightgreen; color:#fff;}
+ul {background-color:lightcoral;}
+/* CSS는 부모한테 특정 속성 적용 시 속성에 따라 자식 또는 자손까지 전달되기도 한다. */
+li {color:white;}
+ol {background-color:purple;}
+header {background-color:black; color:yellow;}
+h3 {background-color:plum;}
+em {color:#fff; background-color:green;}
+a {color:yellow; background-color:burlywood;}
+section {color:aqua; background-color:beige;}/* block */
+h4 {color:brown; background-color:skyblue;}/* block */
+span {color:white; background-color:yellowgreen;}/* inline */
+/* 클래스 선택자 연습 */
+.blog {background-color:lightpink;}
+.study {color:red; background-color: aquamarine;}
+.study> .first {color:black; background-color:brown;}
+.study> .second {color:purple; background-color:white;}
+.study> li {background-color:black;}
+.study> li > del {color:yellow; background-color:purple;}
+footer {color:red; background-color:lightcyan;}
+footer> address {color:darkblue; background-color:white;}
+footer> .copy {color:sandybrown; background-color:lightgreen;}
+footer> p {color:sandybrown; background-color:lightgreen;}
+footer> p> span {color:antiquewhite; background-color:#555;}
+footer> p> em {color:pink; background-color:#888;}
+/* 디자인하는 선택자에 부모가 있으면 선택자에 부모까지 포함해서 적어야한다. */
+/* li {} 잘못된 경우(부모가 있는데 부모 안적음) */
+/* 태그가 2개 이상 반복될 대 구분하는 클래스 선택자 */
+/* 태그의 인라인, 블록 유형에 따라 적용 결과가 다를 수 있다. */
+/* 블록 태그 h3은 배경색이 1행 전체에 적용되고 em은 인라인이어서 em이 가진 글자만큼만 적용된다. */
+/* a태그는 블록, 인라인 모두 가능하나 css상으론 처음 a태그가 발표됐을 때의 초기모습(인라인)을 가지고 있다. (나중에 블록형태로 css도 변경가능) */
+/* 상속된 color가 a에 적용되지 않는 이유? */
+/* 실제론 적용됐으나 a태그에 기본적으로 내장된 파랑색이 상속값을 덮어서 보이지 않는다. */
+/* 태그 순서 생각하며 똑같은 선택자 또 쓰지 않기! */
+/* 선택자는 html에 작성된 모든태그를 기준으로 한다. */
