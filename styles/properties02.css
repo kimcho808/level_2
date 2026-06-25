@@ -1,0 +1,93 @@
+.spiderman {
+    width: 350px;
+    height: max-content;
+    background-color: #1B1818;
+    padding: 20px 15px 20px 15px;
+}
+/* ======================================= 1. 제목, 포스터 */
+.spiderman > h1 {
+    font-family: 'Onest', '맑은 고딕';
+    font-weight: 700;
+    font-size: 1.375em;
+    line-height: 1.5;
+    color: #FBC601;
+    margin-bottom: 10px;
+}
+.spiderman > .poster {
+    margin-bottom: 15px;
+}
+.spiderman > .poster > img {
+    border: 1px solid #FBC601;
+}
+/* ======================================== 2. 소개 */
+.spiderman > .summary {
+    margin-bottom: 10px;
+}
+.spiderman > .summary > h2 {
+    font-family: 'Onest', '맑은 고딕';
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #FBC601;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+.spiderman > .summary > .story {
+    font-family: 'Pretenderd', '맑은 고딕';
+    font-size: 0.875em;
+    color: #fff;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+/* ======================================== 3. 시리즈 */
+.spiderman > .movie_series {}
+.spiderman > .movie_series > h2 {
+    font-family: 'Onest', '맑은 고딕';
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #FBC601;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+.spiderman > .movie_series > .series_g {
+    display: flex;
+    justify-content: space-between;
+}
+/* ======================================== 3-1 */
+.spiderman > .movie_series > .series_g > .series1 {}
+.spiderman > .movie_series > .series_g > .series1 > .series_poster {}
+.spiderman > .movie_series > .series_g > .series1 > .series_poster > img {
+    margin-bottom: 6px;
+}
+.spiderman > .movie_series > .series_g > .series1 > .series_name {
+    font-family: 'Pretenderd', '맑은 고딕';
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+/* ======================================== 3-2 */
+.spiderman > .movie_series > .series_g > .series2 {}
+.spiderman > .movie_series > .series_g > .series2 > .series_poster {}
+.spiderman > .movie_series > .series_g > .series2 > .series_poster > img {
+    margin-bottom: 6px;
+}
+.spiderman > .movie_series > .series_g > .series2 > .series_name {
+    font-family: 'Pretenderd', '맑은 고딕';
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+/* ======================================== 3-3 */
+.spiderman > .movie_series > .series_g > .series3 {}
+.spiderman > .movie_series > .series_g > .series3 > .series_poster {}
+.spiderman > .movie_series > .series_g > .series3 > .series_poster > img {
+    margin-bottom: 6px;
+}
+.spiderman > .movie_series > .series_g > .series3 > .series_name {
+    font-family: 'Pretenderd', '맑은 고딕';
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
