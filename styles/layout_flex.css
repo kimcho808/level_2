@@ -1,0 +1,63 @@
+/* css */
+.box {
+    width:300px; height:400px;
+}
+.box > h1 {background-color: yellow;}
+.box > p {background-color: aqua;}
+.box > * {
+    border-width:1px;
+    border-style:solid;
+    width: 100px; height: 100px;
+}/* 클래스(.) 박스의 모든(*) 자식들(>) */
+/* ================================================ 개별클래스 */
+.box1 {
+    background-color: lightcyan;
+    /* 자식(item)을 정렬하고 싶을 땐 부모(container)에게 명령 */
+    display:flex;
+    /* flex만 넣었을 때 기본 값 : 메인축(수평) 줄바꿈불가 */
+    /* 1. 메인축 방향 속성 */
+    /* flex-direction:row; 아이템의 메인축을 수평으로 방향맞추기 */
+    /* flex-direction:row-reverse; 좌우반전 */
+    /* flex-direction:column; 아이템의 메인축을 수직으로 방향맞추기 */
+    /* flex-direction:column-reverse; 수직 반전(최신글이 먼저 보여야 할 때) */
+    /* flex-direction: column-reverse; */
+    /* 2. 줄바꿈 속성(기본값 : nowrap) */
+    /* nowrap인 경우 px로 고정값 설정한 대상이 자동으로 가변형(%)가 될 수 있다. */
+    /* flex-wrap:wrap; 줄바꿈 */
+    /* flex-wrap:wrap-reverse; 반전 */
+    /* flex-wrap: nowrap; 줄바꿈 없음 */
+    /* 3. 메인축 방향 속성+줄바꿈 속성 (묶음 속성) */
+    /* flex-flow: row nowrap; */
+    flex-flow: row nowrap;
+    /* 4. 메인축(수평, 수직)에 남는 공간에 맞춘 정렬 속성 */
+    /* justify-content: center; 중간 정렬 (row기준 피그마 정렬에서 위에서 가운데를 한 것과 같음)*/
+    /* justify-content: flex-end; 오른쪽 정렬 */
+    /* justify-content: flex-start; 왼쪽 정렬 */
+    /* justify-content:space-between; 정렬 방향의 양끝으로 (피그마 오토 한것과 같음) */
+    /* justify-content:space-around; 양끝은 살짝 띄우고 나머지 item을 균등있게 띄운다 */
+    justify-content:space-around;
+    /* 5. 교차축(수평, 수직)에 남은 공간에 맞춘 2줄 이상 정렬 속성 (2줄 이상의 정렬 방법이라 반드시 flex-wrap:wrap을 써야 함) */
+    /* align-content:flex-end; 메인축이 수평일 때 교차축은 수직임 end는 끝점을 의미하기 때문에 수직 끝으로 감 */
+    /* align-content: center; 메인축이 수평일 때 수직 교차축의 가운데 */
+    /* align-content: space-between; 메인축이 수평일 때 수직 교차축의 양 끝(위, 아래)*/
+    /* align-content: space-around; 메인축이 수평일 때 수직교차축의 양끝. 축양끝은 살짝 띄우고 나머지 item을 균등있게 띄운다 */
+    /* align-content: space-around; */
+    /* 6. 교차축(수평, 수직)에 남은 공간에 맞춘 1줄 정렬 속성 (1줄 정렬 방법이라 반드시 flex-wrap:nowrap을 써야 함) */
+    /* 1줄이기 때문에 between이랑 around를 못씀 */
+    /* align-items: center; 교차축의 가운데 */
+    /* align-items: flex-start; 교차축의 위에 */
+    /* align-items: flex-end; 교차축의 끝에 */
+    align-items: flex-end;
+    /* align-content와 align-items은 flex의 줄바꿈 속성에 따라 둘 중 1개만 작성한다. nowrap일땐 align-items, wrap일땐 align-content */
+}
+.box2 {
+    background-color: lightyellow;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.box1 > h1 {border-color:red}
+.box1 > p {border-color:purple}
+.box2 > h1 {border-color: coral;}
+.box2 > p {border-color: blueviolet;}
